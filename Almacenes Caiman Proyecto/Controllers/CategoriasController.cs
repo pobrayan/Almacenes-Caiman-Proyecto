@@ -34,6 +34,7 @@ namespace Almacenes_Caiman_Proyecto.Controllers
             }
         }
 
+
         [HttpPut]
         public ActionResult ActualizarElProducto([FromBody] Entidades.CategoriaController.CategoriaActualizar entidad)
         {
