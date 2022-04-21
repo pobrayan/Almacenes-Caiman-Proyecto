@@ -21,7 +21,7 @@ namespace Almacenes_Caiman_Proyecto.Entidades
         public DateTime? Fechademodificacion { get; set; }
         public string Estado { get; set; } = null!;
 
-        public virtual Categoria CategoriaNavigation { get; set; } = null!;
+        public virtual Categorias CategoriaNavigation { get; set; } = null!;
         public virtual ICollection<Detallesventa> Detallesventa { get; set; }
         public virtual ICollection<Historialprecio> Historialprecios { get; set; }
     }

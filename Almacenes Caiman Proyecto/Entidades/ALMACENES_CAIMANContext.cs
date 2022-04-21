@@ -16,7 +16,7 @@ namespace Almacenes_Caiman_Proyecto.Entidades
         {
         }
 
-        public virtual DbSet<Categoria> Categorias { get; set; } = null!;
+        public virtual DbSet<Categorias> Categorias { get; set; } = null!;
         public virtual DbSet<Cliente> Clientes { get; set; } = null!;
         public virtual DbSet<Detallesventa> Detallesventas { get; set; } = null!;
         public virtual DbSet<Historialprecio> Historialprecios { get; set; } = null!;
@@ -36,7 +36,7 @@ namespace Almacenes_Caiman_Proyecto.Entidades
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Categoria>(entity =>
+            modelBuilder.Entity<Categorias>(entity =>
             {
                 entity.ToTable("CATEGORIAS");
 

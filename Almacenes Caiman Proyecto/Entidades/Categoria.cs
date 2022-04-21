@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace Almacenes_Caiman_Proyecto.Entidades
 {
-    public partial class Categoria
+    public partial class Categorias
     {
-        public Categoria()
+        public Categorias()
         {
             Productos = new HashSet<Producto>();
         }
